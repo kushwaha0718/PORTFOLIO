@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #24243e, #0f0c29,#302b63);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,#1f1c3e, #131322, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: "Nunito Sans", serif;
+    font-optical-sizing: auto;
+}
+
+body nav{
+    padding: 20px;
+}
+
+body nav .navoptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body nav .navoptions li{
+    list-style: none;
+    padding: 10px 25px;
+}
+
+body nav .navoptions li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+body nav .navoptions a:hover{
+    border-bottom: 1px solid white;
+}
+
+body nav .navoptions button{
+    font-size: 1.1rem;
+    padding: 15px 20px;
+    border-radius: 25px;
+    border: 0px solid transparent;
+    background-color: rgb(132, 0, 255);
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+}
