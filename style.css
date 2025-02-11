@@ -113,11 +113,15 @@ body .home{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 90vh;
 }
 
 body .home .left{
-    width: 50%;
-    padding: 50px;
+    width: 40%;
+    padding-top: 0px;
+    padding: 0px 50px 50px 50px;
+    margin-right: 50px;
+    padding-left: 200PX;
 }
 
 
@@ -139,8 +143,91 @@ body .home .left .intro-greet-next{
     font-size: 3rem;
     font-weight: 800;
     color: #7a00ff;
+    animation: typing 3.5s steps(40, end),blink-caret .75s step-end infinite,blink-caret-last .75s infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid #7a00ff;
+}
+
+body .home .left .intro-quote{
+    font-size: 1.5rem;
+    width: 100%;
 }
 
 body .home .right{
-    width: 50%;
+    width: 40%;
+    /* padding-top: 100PX; */
+}
+
+body .home .right img{
+    height: 550px;
+    padding: 0px 30px;
+    border-bottom: 3px solid white;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from {
+        border-color:#7a00ff;
+    }
+
+    to {
+        border-color: transparent;
+    }
+  }
+
+  @keyframes blink-caret-last {
+    0% {
+        border-color:#7a00ff;
+    }
+
+    50% {
+        border-color: transparent;
+    }
+    100% {
+        border-color:#7a00ff;
+    }
+  }
+
+body .home .left .socials{
+    margin-top: 30px;
+}
+
+body .home .left .socials a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    max-width: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+body .home .left .socials .fb{
+    padding: 10px 12px;
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+body .home .left .socials .linkedin{
+    background: #00c6ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+body .home .left .socials .git{
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+body .home .left .socials .insta{
+    background: #bc4e9c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
