@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <nav>
@@ -23,7 +24,7 @@
             </ul>
         </div> -->
 
-        <ul class="navoptions">
+        <ul class="navoptions" data-aos="fade-down" data-aos-duration="1500">
             <li><a href="">HOME</a></li>
             <li><a href="">ABOUT</a></li>
             <li><a href="">PROJECTS</a></li>
@@ -35,11 +36,11 @@
 
     <section class="home">
         <div class="left">
-            <span class="intro-name">AYUSH KUSHWAHA</span><br>
-            <p class="intro-greet">HELLO! I'M AYUSH</p>
-            <p class="intro-greet-next">I'M A FULL-STACK DEVELOPER.</p>
-            <p class="intro-quote">I turn ideas into interactive, scalable, and efficient digital experiences blending front-end elegance with back-end power. Code is my canvas, and innovation is my craft.</p>
-            <div class="socials">
+            <span class="intro-name" data-aos="fade-right" data-aos-duration="2400" data-aos-delay="200">AYUSH KUSHWAHA</span><br>
+            <p class="intro-greet" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">HELLO! I'M AYUSH</p>
+            <p class="intro-greet-next" data-aos="fade-right" data-aos-duration="900" data-aos-delay="800">I'M A FULL-STACK DEVELOPER.</p>
+            <p class="intro-quote" data-aos="fade-right" data-aos-duration="1300" data-aos-delay="1000">I turn ideas into interactive, scalable, and efficient digital experiences blending front-end elegance with back-end power. Code is my canvas, and innovation is my craft.</p>
+            <div class="socials" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1200">
                 <a href="" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="https://www.linkedin.com/in/ayush-kushwaha-65650b263/" class="linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="https://github.com/kushwaha0718" class="git" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -47,11 +48,17 @@
             </div>
         </div>
         <div class="right">
-            <img src="/IMAGES/profile.png" alt="">
+            <img src="/IMAGES/profile.png" alt="" data-aos="zoom-in-left" data-aos-duration="1000" data-aos-delay="1200">
         </div>
     </section>
 
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:1,
+      });
+    </script>
 </body>
 </html>

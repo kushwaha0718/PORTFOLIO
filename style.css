@@ -143,10 +143,11 @@ body .home .left .intro-greet-next{
     font-size: 3rem;
     font-weight: 800;
     color: #7a00ff;
-    animation: typing 3.5s steps(40, end),blink-caret .75s step-end infinite,blink-caret-last .75s infinite;
+    animation: typing 3.5s steps(50, end),blink-caret .75s step-end infinite,blink-caret-last .75s infinite;
     white-space: nowrap;
     overflow: hidden;
     border-right: 5px solid #7a00ff;
+    animation-delay: 1.5s;
 }
 
 body .home .left .intro-quote{
@@ -208,13 +209,16 @@ body .home .left .socials a{
     border-radius: 20px;
     font-size: 1.5rem;
     margin-right: 10px;
+    transition: 0.5;
 }
+
 body .home .left .socials .fb{
     padding: 10px 12px;
     background: #0575E6;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 body .home .left .socials .linkedin{
     background: #00c6ff;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
@@ -230,4 +234,93 @@ body .home .left .socials .insta{
     background: #bc4e9c;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+@media (max-width: 1568px) {
+    body .home .right img{
+        height: 450px;
+    }
+}
+@media (max-width: 1340px) {
+    body .home .right img{
+        height: 400px;
+    }
+
+    body .home .left{
+        padding-left: 100PX;
+    }
+    
+    
+    body .home .left .intro-name{
+        padding: 5px 10PX;
+        font-weight: 500;
+        background-color: #7b00ff3a;
+        border-radius: 5px;
+    }
+    
+    body .home .left .intro-greet{
+        margin: 10px 0px;
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+    
+    body .home .left .intro-greet-next{
+        font-size: 2rem; 
+    }
+    
+    body .home .left .intro-quote{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1130px){
+
+    body .home
+    {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    body .home .left{
+        width: 80%;
+    }
+    body .home .left .intro-greet{
+        font-size: 2.5rem;
+    }
+    
+    body .home .left .intro-greet-next{
+        font-size: 3rem; 
+        padding-right: 0px;
+    }
+    
+    body .home .left .intro-quote{
+        font-size: 1.5rem;
+    }
+
+    body nav .navoptions li{
+        padding: 5px 15px;
+    }
+    
+    body nav .navoptions li a{
+        font-size: .9rem;
+    }
+    body .home .left .socials{
+        
+        display: none;
+    }
+}
+
+@media (max-width : 940px){
+    body .home .left .intro-greet{
+        font-size: 2rem;
+    }
+    
+    body .home .left .intro-greet-next{
+        font-size: 2rem; 
+        padding-right: 0px;
+    }
+    
+    body .home .left .intro-quote{
+        font-size: 1rem;
+    }
 }
