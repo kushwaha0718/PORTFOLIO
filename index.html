@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="theme-color" content="#7a00ff">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>portfolio</title>
+    <link rel="icon" href="IMAGES/profile.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -19,8 +21,8 @@
             <button id="navoff"><i class="fa-solid fa-arrow-left"></i></button>
         </div>
         <ul class="navoptions2">
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
             <li><a href="">SKILLS</a></li>
             <li><a href="">PROJECTS</a></li>
             <li><a href="">SERVICES</a></li>
@@ -33,16 +35,16 @@
     </div>
     <nav>
         <ul class="navoptions" data-aos="fade-down" data-aos-duration="1500">
-            <li><a href="">HOME</a></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
             <li><a href="">SKILLS</a></li>
-            <li><a href="">ABOUT</a></li>
             <li><a href="">PROJECTS</a></li>
             <li><a href="">SERVICES</a></li>
             <li><a href="">CONTACT</a></li>
             <button class="glow-on-hover">LET'S TALK</button>
         </ul>
     </nav>
-    <section class="home">
+    <section class="home" id="home">
         <div class="left">
             <span class="intro-name" data-aos="fade-right" data-aos-duration="2400" data-aos-delay="200">AYUSH KUSHWAHA</span><br>
             <p class="intro-greet" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">HELLO! I'M AYUSH</p>
@@ -59,9 +61,9 @@
             <img src="IMAGES/profile.png" alt="" data-aos="zoom-in-left" data-aos-duration="1000" data-aos-delay="1200">
         </div>
     </section>
-    <section class="languages" data-aos="fade" data-aos-duration="1200" data-aos-delay="100">
-        <marquee direction="left" class="languages-scroll">
-            <div class="inner-scroll">
+    <section class="languages" >
+        <marquee direction="left" class="languages-scroll" data-aos="fade" data-aos-duration="1200" data-aos-delay="100">
+            <div class="inner-scroll" data-aos="fade" data-aos-duration="1200" data-aos-delay="300">
                 <div><img src="IMAGES/c.png" alt=""></div>
                 <div><img src="IMAGES/java.png" alt=""></div>
                 <div><img src="IMAGES/html.png" alt=""></div>
@@ -75,12 +77,10 @@
             </div>
         </marquee>
     </section>
-    <section class="about">
-        <p data-aos="fade" data-aos-duration="1200" data-aos-delay="200" class="about-title">READ MORE ABOUT ME !</p>
+    <section class="about" id="about">
+        <p data-aos="fade" data-aos-duration="1200" data-aos-delay="200" class="about-title">READ MORE ABOUT ME <i class="fa-solid fa-arrow-down"></i></p>
         <div class="main-about" data-aos="fade" data-aos-duration="1200" data-aos-delay="300">
-            <div class="left" data-aos="fade" data-aos-duration="1200" data-aos-delay="500">
-                <p>Hello! I'm <strong>Ayush Kushwaha</strong>, a driven and passionate <strong>Full-Stack Developer</strong> currently pursuing my B.Tech in Information Technology at Bengal College of Engineering and Technology, graduating in 2026. With a strong foundation in both front-end and back-end development, I enjoy creating robust, user-centric web applications that solve real-world problems.<br>My journey into development began with a fascination for how technology can simplify lives. Over the years, I’ve sharpened my skills in Java, Spring Boot, Hibernate, MySQL, HTML, CSS, JavaScript, and React.As a tech enthusiast, I love working in collaborative environments.<br>I’ve been part of a four-member team for my final year project, bringing together expertise in frontend, backend, and cybersecurity to build a secure, innovative web solution.<br>I'm also exploring emerging technologies and frameworks to stay current in this rapidly evolving field.<br>Beyond coding, I have a keen interest in community involvement. I was a proud member of my college’s NSS unit, where I participated in several initiatives aimed at making a positive impact on society. <br>In everything I do, I aim to bring a mix of creativity, precision, and continuous learning. <br>My goal is to contribute to meaningful tech solutions that can make a difference, while constantly evolving as a developer and a team player.<br>Feel free to check out my projects, connect with me on LinkedIn, or explore my GitHub to see what I’m currently working on. Let’s build something amazing together!</p>
-            </div>
+             <p>Hello! I'm <strong>Ayush Kushwaha</strong>, a driven and passionate <strong>JAVA Full-Stack Developer</strong> currently pursuing my <strong>B.Tech in Information Technology at Bengal College of Engineering and Technology, graduating in 2026</strong>. With a strong foundation in both <strong>front-end</strong> and <strong>back-end</strong> development, I enjoy creating robust, user-centric web applications that solve real-world problems.<br>My journey into development began with a fascination for how technology can simplify lives. Over the years, I’ve sharpened my skills in <strong>Java, Spring Boot, Hibernate, MySQL, HTML, CSS, JavaScript, and React</strong>.As a tech enthusiast, I love working in collaborative environments.<br>I’ve been part of a four-member team for my final year project, bringing together expertise in frontend, backend, and cybersecurity to build a secure, innovative web solution.<br>I'm also exploring emerging technologies and frameworks to stay current in this rapidly evolving field.<br>Beyond coding, I have a keen interest in community involvement. I was a proud member of my college’s <strong>NSS</strong> unit, where I participated in several initiatives aimed at making a positive impact on society. <br>In everything I do, I aim to bring a mix of creativity, precision, and continuous learning. <br><strong>My goal is to contribute to meaningful tech solutions that can make a difference</strong>, while constantly evolving as a developer and a team player.<br>Feel free to check out my projects, connect with me on LinkedIn, or explore my GitHub to see what I’m currently working on. Let’s build something amazing together!</p>
         </div>
     </section>
 
