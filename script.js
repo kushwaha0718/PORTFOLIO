@@ -14,3 +14,15 @@ function toggleoff(){
 navbring.addEventListener("click",toggle);
 
 navoff.addEventListener("click",toggleoff);
+
+
+const msg = document.getElementById('glow-on-hover3');
+function updateDateTime() {
+    const now = new Date();
+    const date = now.toLocaleDateString();
+    const time = now.toLocaleTimeString();
+    msg.textContent = `This website is still in progress. [ Date : ${date} , Time : ${time} ]`;
+  }
+
+  updateDateTime(); // Initial call
+  setInterval(updateDateTime, 1000);
